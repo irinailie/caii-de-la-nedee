@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caii de la Nedee</title>
+<meta name="description" content="Arborele genealogic al cailor din herghelia Nedeea Vâlceană — cine e mama cui, cine se iubește și cine nu se suportă.">
+<meta name="theme-color" content="#1E3A2B">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Caii Nedee">
+<meta property="og:title" content="Caii de la Nedee">
+<meta property="og:description" content="Arborele genealogic al hergheliei de la Nedeea Vâlceană">
+<meta property="og:image" content="img/coperta.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="bara">
+    <div class="coperta" aria-hidden="true"></div>
+    <div class="bara-continut">
+      <div class="titlu">
+        <h1>Caii de la Nedee</h1>
+        <p>herghelia Nedeea Vâlceană · La mii de stele</p>
+      </div>
+      <button class="btn-despre" id="btn-despre" aria-label="Despre arbore">i</button>
+      <div class="cautare" role="search">
+        <input id="cauta" type="search" placeholder="Caută un cal după nume…" autocomplete="off" aria-label="Caută un cal după nume" aria-controls="rezultate">
+        <ul class="rezultate" id="rezultate" role="listbox" hidden></ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="arbore" aria-label="Arborele genealogic">
+    <svg id="svg-arbore" role="img" aria-label="Arborele genealogic al cailor"></svg>
+    <div class="zoom">
+      <button id="zoom-plus" aria-label="Mărește">+</button>
+      <button id="zoom-minus" aria-label="Micșorează">−</button>
+      <button id="zoom-tot" aria-label="Tot arborele">⤢</button>
+    </div>
+    <details class="legenda">
+      <summary>Legendă</summary>
+      <div class="legenda-continut" id="legenda"></div>
+    </details>
+  </main>
+</div>
+
+<section id="pagina-cal" hidden></section>
+
+<dialog id="despre">
+  <div class="despre-coperta"><img src="img/coperta.jpg" alt="Casa „La mii de stele” și un cal alb în galop"></div>
+  <div class="despre-text">
+    <h2>Salut!</h2>
+    <p>Aici e familia cailor de la <b>Nedeea Vâlceană</b>, cei cu care urcăm pe munte în Munții Lotrului și în Țara Loviștei, în ture de la o zi la o săptămână. Seara ne întoarcem „La mii de stele”, acasă.</p>
+    <p><b>Cum citești arborele:</b> cu cât un cal e mai sus, cu atât e mai bătrân. Apasă pe oricare ca să afli cine e, al cui e și cu cine se înțelege (sau nu).</p>
+    <div class="legenda-continut" id="legenda-despre"></div>
+    <div class="instalare" id="instalare"></div>
+    <p class="mic"><a href="https://nedeea-valceana.ro" target="_blank" rel="noopener">nedeea-valceana.ro</a></p>
+    <form method="dialog"><button class="btn-plin">Am înțeles</button></form>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
