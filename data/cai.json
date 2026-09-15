@@ -6,7 +6,7 @@
     { "id": "ciucurica", "nume": "Ciucurica", "sex": "F", "nascut": "1995", "decedat": "2010", "poza": "ciucurica", "origine": null,     "comentariu": "Stră-strămoașa hergheliei." },
     { "id": "ghiuri",    "nume": "Ghiuri",    "sex": "M", "nascut": "2004", "decedat": "2010", "poza": "ghiuri",   "origine": null,      "mama": "ciucurica", "comentariu": "Strămoșul hergheliei." },
     { "id": "catiusa",   "nume": "Catiușa",   "sex": "F", "nascut": "2005", "decedat": "2007", "poza": null,       "origine": "născută", "mama": "ciucurica", "comentariu": "Născută în herghelie." },
-    { "id": "sasa",      "nume": "Șasa",      "sex": "F", "nascut": "2005",                    "poza": "sasa",     "origine": "adoptată", "comentariu": "Adoptată în herghelie. Mama tuturor cailor." },
+    { "id": "sasa",      "nume": "Sașa",      "sex": "F", "nascut": "2005",                    "poza": "sasa",     "origine": "adoptată", "comentariu": "Adoptată în herghelie. Mama tuturor cailor." },
     { "id": "murgu",     "nume": "Murgu",     "sex": "M", "nascut": "15 mai 2006",             "poza": "murgu",    "origine": "născut",  "mama": "ciucurica", "comentariu": "Născut în herghelie. E înțeleptul și conducătorul hergheliei." },
     { "id": "fulger",    "nume": "Fulger",    "sex": "M", "nascut": "21–23 aprilie 2008",      "poza": "fulger",   "origine": "născut",  "mama": "ciucurica", "comentariu": "Născut în herghelie. Îi bate pe toți caii, pentru că profită de faptul că e fratele lui Murgu." },
     { "id": "bobi",      "nume": "Bobi",      "sex": "M", "nascut": "2010",                    "poza": "bobi",     "origine": "adoptat", "comentariu": "Adoptat în herghelie. Tatăl adoptiv al lui Piciu, Zorba și Vizir." },
