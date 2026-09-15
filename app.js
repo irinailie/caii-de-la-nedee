@@ -63,6 +63,15 @@
       if (c.tata) BY[c.tata].copii.push(c);
       if (c.tataAdoptiv) BY[c.tataAdoptiv].copiiAdoptivi.push(c);
     });
+    // Frați = aceeași mamă sau același tată; verișori = copiii fraților părinților (doar părinți naturali)
+    const parinti = (c) => [c.mama, c.tata].filter(Boolean).map((i) => BY[i]);
+    CAI.forEach((c) => {
+      c.frati = [...new Set(parinti(c).flatMap((p) => p.copii))].filter((x) => x !== c);
+    });
+    CAI.forEach((c) => {
+      const exclus = new Set([c, ...c.frati, ...parinti(c), ...c.copii]);
+      c.verisori = [...new Set(parinti(c).flatMap((p) => p.frati).flatMap((u) => u.copii))].filter((x) => !exclus.has(x));
+    });
     data.relatii.forEach((r) => {
       const [a, b] = r.intre.map((i) => BY[i]);
       const k = { 'iubire': 'iubire', 'prietenie': 'prieteni', 'dușmănie': 'dusmani' }[r.tip];
@@ -373,6 +382,8 @@
           ${sectiune('Tată adoptiv', c.tataAdoptiv ? [BY[c.tataAdoptiv]] : [], 'var(--mustar)')}
           ${sectiune('Copii', dupaAn(c.copii), 'var(--brad-2)')}
           ${sectiune('Copii adoptivi', dupaAn(c.copiiAdoptivi), 'var(--mustar)')}
+          ${sectiune('Frați', dupaAn(c.frati), 'var(--brad-2)')}
+          ${sectiune('Verișori', dupaAn(c.verisori), 'var(--brad-2)')}
           ${sectiune('Iubire', c.iubire, 'var(--mustar)')}
           ${sectiune('Prieteni', c.prieteni, 'var(--mustar)')}
           ${sectiune('Dușmani', c.dusmani, 'var(--carbune)')}
