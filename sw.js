@@ -1,7 +1,7 @@
 // Crește versiunea la fiecare schimbare, ca telefoanele să ia datele noi.
-const VERSIUNE = 'caii-nedee-v3';
+const VERSIUNE = 'caii-nedee-v4';
 
-const CAI = ['bobi', 'breazu', 'cezar', 'ciucurica', 'dochia', 'fulger', 'ghiuri', 'han', 'heidi', 'jar', 'lina', 'misu',
+const CAI = ['bobi', 'breazu', 'bruno', 'cezar', 'ciucurica', 'dochia', 'fulger', 'ghiuri', 'han', 'heidi', 'jar', 'lina', 'misu',
   'murgu', 'paco', 'piciu', 'praslea', 'sasa', 'saturn', 'sumi', 'suru', 'vizir', 'zorba'];
 
 const FISIERE = [

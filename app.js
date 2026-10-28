@@ -11,10 +11,10 @@
     puiu: [730], ciucurica: [630], ghiuri: [505], catiusa: [800], sasa: [368], murgu: [596], fulger: [704],
     bobi: [245], dochia: [530], paco: [400], saturn: [908], sumi: [310], cezar: [590], breazu: [705],
     lina: [510], vizir: [161], praslea: [819], suru: [729], zorba: [272], jar: [68], han: [463], heidi: [640],
-    piciu: [357], misu: [429]
+    piciu: [357], misu: [429], bruno: [55]
   };
   // cât de tare se curbează o relație (pozitiv = spre dreapta sensului a→b)
-  const CURBURI = { 'murgu|fulger': -0.4, 'bobi|sumi': 0.35, 'paco|saturn': 0.22, 'han|suru': -0.25, 'zorba|saturn': 0.32, 'zorba|praslea': 0.28, 'saturn|suru': 0.12 };
+  const CURBURI = { 'murgu|fulger': -0.4, 'bobi|sumi': 0.35, 'paco|saturn': 0.22, 'han|suru': -0.25, 'zorba|saturn': 0.32, 'zorba|praslea': 0.28, 'saturn|suru': 0.12, 'sumi|bruno': -0.3 };
   const LIDER = 'murgu';
   const R = 44;          // raza cercului
   const PX_AN = 62;      // pixeli pe an, din 2004 încoace

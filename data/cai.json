@@ -17,6 +17,7 @@
     { "id": "cezar",     "nume": "Cezar",     "sex": "M", "nascut": "2013",                    "poza": "cezar",    "origine": "adoptat", "comentariu": "Adoptat în herghelie." },
     { "id": "breazu",    "nume": "Breazu",    "sex": "M", "nascut": "2013",                    "poza": "breazu",   "origine": "adoptat", "comentariu": "Adoptat în herghelie." },
     { "id": "lina",      "nume": "Lina",      "sex": "F", "nascut": "2016",                    "poza": "lina",     "origine": "născută", "mama": "paco", "tata": "breazu", "comentariu": "Născută în herghelie. Bate toți caii mai puțin pe cei din familia ei. E prietenă bună cu Cezar." },
+    { "id": "bruno",     "nume": "Bruno",     "sex": "M", "nascut": "august 2016",             "poza": "bruno",    "origine": "adoptat", "comentariu": "Adoptat în herghelie. E venit de prin partea locului, așa că nu e chiar străin pentru restul cailor. E în proces de integrare, mulți ciulesc încă la el, și mai ales Bobi, care suferă că Sumi e cam îndrăgostită de Bruno." },
     { "id": "vizir",     "nume": "Vizir",     "sex": "M", "nascut": "2017",                    "poza": "vizir",    "origine": "născut",  "mama": "sasa", "tataAdoptiv": "bobi", "comentariu": "Născut în herghelie." },
     { "id": "praslea",   "nume": "Prâslea",   "sex": "M", "nascut": "2017",                    "poza": "praslea",  "origine": "adoptat", "comentariu": "Adoptat în herghelie. Singurul (aproape) prieten al lui Saturn." },
     { "id": "suru",      "nume": "Suru",      "sex": "M", "nascut": "2018",                    "poza": "suru",     "origine": "născut",  "mama": "dochia", "comentariu": "Născut în herghelie." },
@@ -38,7 +39,11 @@
     { "tip": "prietenie", "intre": ["saturn", "praslea"] },
     { "tip": "prietenie", "intre": ["zorba", "praslea"] },
     { "tip": "prietenie", "intre": ["zorba", "saturn"] },
+    { "tip": "prietenie", "intre": ["zorba", "bruno"] },
+    { "tip": "prietenie", "intre": ["sumi", "bruno"] },
     { "tip": "dușmănie",  "intre": ["paco", "saturn"] },
-    { "tip": "dușmănie",  "intre": ["saturn", "suru"] }
+    { "tip": "dușmănie",  "intre": ["saturn", "suru"] },
+    { "tip": "dușmănie",  "intre": ["jar", "bruno"] },
+    { "tip": "dușmănie",  "intre": ["bobi", "bruno"] }
   ]
 }
